@@ -70,4 +70,7 @@ export const UpdateNewPosttext = text => ({
 	newText: text,
 })
 
+export const sentMessageCreate = () => ({type: SEND_MESSAGE})
+export const updateNewMeassageBody = body => ({type: UPDATE_MESSAGE, body: body})
+
 export default store

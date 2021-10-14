@@ -8,6 +8,7 @@ let rerenderEntireTree = State => {
 	ReactDOM.render(
 		<React.StrictMode>
 			<App
+				store={store}
 				State={State}
 				dispatch={store.dispatch.bind(store)}
 	

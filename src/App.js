@@ -18,7 +18,7 @@ function App(props) {
 				<NavBar />
 				<div className={s.content}>
 				<Route path='/Profile' render={() => <Content State={props.State} dispatch={props.dispatch}/>}/>
-				<Route  path='/Message' render={() => <Dialogs State={props.State}/>} />
+				<Route  path='/Message' render={() => <Dialogs store={props.store}/>} />
 				</div>
 			</div>
 		</BrowserRouter>
