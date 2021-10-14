@@ -1,0 +1,16 @@
+.header {
+    font-family: 'Nunito', sans-serif;
+    grid-area: header;
+    background-color: #552157da;
+    color: black;
+    font-style: Extra-light;
+    font-size: 65px;
+   
+
+
+}
+
+.m {
+   margin: 5px 0px 0px 40px 
+
+}
