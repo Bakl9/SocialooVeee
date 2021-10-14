@@ -52,12 +52,12 @@ let store = {
 			this._state.newPostText = action.newText
 			this.rerenderEntireTree(this._state)
 		} else if (action.type === UPDATE_MESSAGE) {
-			this._state.newMessageBody = action.UPDATE_MESSAGE
+			this._state.newMessageBody = action.body
 			this.rerenderEntireTree(this._state)
 		} else if (action.type === SEND_MESSAGE) {
 			let body = this._state.newMessageBody;
 			this._state.newMessageBody = ''
-			this._state.messageData.push({ message: 'hello', id: body })
+			this._state.messageData.push({ message: body, id: 5 })
 			this.rerenderEntireTree(this._state)
 		}
 	},     // 17:15   
