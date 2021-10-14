@@ -52,7 +52,7 @@ let store = {
 			this._state.newPostText = action.newText
 			this.rerenderEntireTree(this._state)
 		} else if (action.type === UPDATE_MESSAGE) {
-			this._state.newMessageBody = action.body
+			this._state.newMessageBody = action.body 
 			this.rerenderEntireTree(this._state)
 		} else if (action.type === SEND_MESSAGE) {
 			let body = this._state.newMessageBody;
