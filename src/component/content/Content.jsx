@@ -15,8 +15,8 @@ export default function Content(props) {
 			</div>
 			<Post
 				dispatch={props.dispatch}
-				State={props.State}
 				store={props.store}
+				state={props.state}
 			/>
 		</div>
 	)

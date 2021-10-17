@@ -8,11 +8,11 @@ import { updateNewMeassageBody, sentMessageCreate } from '../../redux/State'
 
 
 
-const State = props.store.getState()
+// let state = props.store.getState().messagePage
 
-const MessageItem = State.messageData.map(name => (<Message message={name.message} id={name.id} />))
-const PeopleItem = State.peopleDate.map(people => (<People name={people.name} id={people.id} />))
-const newMessageBody = State.newMessageBody
+const MessageItem = props.state.messagePage.messageData.map(name => (<Message message={name.message} id={name.id} />))
+const PeopleItem = props.state.messagePage.peopleDate.map(people => (<People name={people.name} id={people.id} />))
+const newMessageBody = props.state.messagePage.newMessageBody
 
 	const MessagePush = () => {
 		props.store.dispatch(sentMessageCreate())

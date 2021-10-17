@@ -10,15 +10,14 @@ import { BrowserRouter,Route } from 'react-router-dom'
     
 
 function App(props) {
-
 	return (
 		<BrowserRouter>
 			<div className="App_wrapper">
 				<Header />
 				<NavBar />
 				<div className={s.content}>
-				<Route path='/Profile' render={() => <Content State={props.State} dispatch={props.dispatch}/>}/>
-				<Route  path='/Message' render={() => <Dialogs store={props.store}/>} />
+				<Route path='/Profile' render={() => <Content state={props.state} dispatch={props.dispatch}/>}/>
+				<Route  path='/Message' render={() => <Dialogs store={props.store} state={props.state}/>} />
 				</div>
 			</div>
 		</BrowserRouter>
